@@ -8,6 +8,7 @@ These codes are free software; you can redistribute it and/or modify it under th
 
 If you use this program in support of published research, please include a citation of the reference below. If you use this code in a software package, please explicitly inform the end users of this copyright notice and ask them to cite the reference below in their published research.
 
+****MANUSCRIPT CURRENTLY UNDER REVIEW****
 
 These codes use Fieldrtip:
 http://www.fieldtriptoolbox.org
