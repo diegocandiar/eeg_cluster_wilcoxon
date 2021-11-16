@@ -2,6 +2,10 @@
 
 This pack of functions correspond to the EEG cluster permutation analysis.
 
+For the function performing the cluster permutation refer to ft_statfun_cluster.
+To visualize examples presented in the manuscript refer to example_ERP and example_EEG.
+Additional files in the folder correspond to preprocessed data formated in the Fieldtrip struct, and EEG channels' locations and neighbouring definitions.
+
 Copyright (C) 2021 Diego Candia-Rivera
 
 These codes are free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation.
