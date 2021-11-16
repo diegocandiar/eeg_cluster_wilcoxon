@@ -20,7 +20,7 @@ cfg.label = {'FP1','FP2','AFz','F7','F3','F4','F8','FC5','FC1',...
     'FC2','FC6','T7','C3','Cz','C4','T8','CP5','CP1','CP2',...
     'CP6','P7','P3','Pz','P4','P8','PO7','O1','Oz','O2','PO8','PO9','PO10'};
 
-stat = ft_statfun_wilcoxon(cfg, ERP_noflash, ERP_flash) ; 
+stat = ft_statfun_cluster(cfg, ERP_noflash, ERP_flash) ; 
 
 if ~isempty(stat.posclusters)    
     pos = stat.posclusterslabelmat == 1; 
