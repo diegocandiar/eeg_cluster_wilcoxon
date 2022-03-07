@@ -1,13 +1,23 @@
 function cluster = ft_statfun_cluster(cfg, struct1, struct2)
 % This function performs cluster-based permutation analysis in
 % two-dimensional data. Data must be organized in struct format with
-% subfields trial and time, organized in cell arrays per sample
+% subfields trial and time, organized in cell arrays per sample.
+%
+% IMPORTANT NOTE: This algorithm does not make multiple comparison 
+% correction based on the number of samples compared, i.e., the 
+% results are not affected by the number of channels in your EEG/MEG
+% system, nor the latency length in which the comparisons are done.
+% E.g., if your data has a true effect in 0-5 latency, the 
+% results should not differ if the comparison is done between 
+% 0-5 or 0-10 seconds.
+%
+% The algorith outputs are:
 % cluster.prob contains p-values from univariate tests
 % cluster.stat contains statistic from univariate tests
 % cluster.mask cluster definition matrix
 % cluster.posclusters cluster statistical details for postive clusters
 % cluster.negclusters cluster statistical details for negative clusters
-
+%
 % cfg struct must contain:
 % cfg.statistic = 'dep_param' 'dep_non_param' 'indep_param' or
 % 'indep_nonparam': % define if dependent or independent test, and if
