@@ -127,7 +127,7 @@ for nclu = [3 1 2 4]
     cfg.interactive = 'no';
     cfg.interplimits = 'head';
     cfg.style = 'straight';
-    cfg.parameter = 'med';
+    cfg.parameter = 'avg';
     cfg.colorbar = 'yes';
     
     subplot(1,4,k)  
