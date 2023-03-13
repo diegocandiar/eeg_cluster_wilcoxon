@@ -44,7 +44,7 @@ BHIdiff.label = EEG_trial.label;
 
 cfg = [];
 cfg.removemean = 'no';
-raweffect = ft_timelockanalysis2(cfg, EEG_trial);
+raweffect = ft_timelockanalysis(cfg, EEG_trial);
     
 %find time range neg
 mask1 = stat.negclusterslabelmat;
