@@ -44,9 +44,9 @@ BHIdiff.label = ERP_flash.label;
 cfg = [];
 % cfg.parameter = 'trial';
 cfg.removemean = 'no';
-raweffect = ft_timelockanalysis2(cfg, BHIdiff);
-trial_tl = ft_timelockanalysis2(cfg, ERP_flash);
-trial_tl2 = ft_timelockanalysis2(cfg, ERP_noflash);
+raweffect = ft_timelockanalysis(cfg, BHIdiff);
+trial_tl = ft_timelockanalysis(cfg, ERP_flash);
+trial_tl2 = ft_timelockanalysis(cfg, ERP_noflash);
         
 %find time range neg
 mask1 = stat.negclusterslabelmat;
@@ -128,7 +128,7 @@ for ti = 1 : Nt
     cfg.interactive = 'no';
     cfg.interplimits = 'head';
     cfg.style = 'straight';
-    cfg.parameter = 'med';
+    cfg.parameter = 'avg';
     cfg.colorbar = 'yes';
     
     subplot(3,2,ti)  
