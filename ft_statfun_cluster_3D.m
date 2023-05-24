@@ -1,4 +1,4 @@
-function cluster = ft_statfun_wilcoxon_3D(cfg, struct1, struct2)
+function cluster = ft_statfun_cluster_3D(cfg, struct1, struct2)
 
 % cfg.statistic = 'dep'; % use the dependent samples T-statistic as a measure to
 % 
