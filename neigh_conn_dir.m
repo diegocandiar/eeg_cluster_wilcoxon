@@ -1,6 +1,4 @@
-
-
-
+% This code helps you to create the connectivity neighbors struct from the standard neighbor struct
 
 labels = {'Fp1' 'AF3' 'F7' 'F3' 'FC1' 'FC5' 'T7' 'C3', ...
 'CP1' 'CP5' 'P7' 'P3' 'Pz' 'PO3' 'O1' 'Oz' 'O2' 'PO4', ...
