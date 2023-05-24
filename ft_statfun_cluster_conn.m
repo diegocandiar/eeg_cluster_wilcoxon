@@ -1,4 +1,4 @@
-function cluster = ft_statfun_wilcoxon_conn(cfg, struct1, struct2)
+function cluster = ft_statfun_cluster_conn(cfg, struct1, struct2)
 % This function performs cluster-based permutation analysis in
 % two-dimensional data. Data must be organized in struct format with
 % subfields trial and time, organized in cell arrays per sample
