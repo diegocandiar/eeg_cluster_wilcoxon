@@ -47,6 +47,20 @@ for ch1 = 1:32
 end
 
 
+neighb = struct;
+k = 1;
+for ch2 = 1:32
+    for ch1 = 1:32
+        if ch1 ~= ch2
+            lbl = label_cmb{ch1,ch2};
+            neigh = neigh_cmb{ch1,ch2};
+            labels2{k,1} = lbl;
+            neighb(k).label = lbl;
+            neighb(k).neighblabel = neigh;
+            k = k+1;
+        end
+    end
+end
 
             
 
